@@ -12,7 +12,7 @@ public class Director {
 
     private String name;
 
-    @ManyToMany
+    @ManyToMany (mappedBy = "directors")
     Set<Movie>  movies = new HashSet<>();
 
     public Long getId() {

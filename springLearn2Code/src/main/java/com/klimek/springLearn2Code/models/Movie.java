@@ -8,17 +8,17 @@ public class Movie {
 
     @Id
     @GeneratedValue
-    
+
     private Long id;
     private String title;
 
     @ManyToMany
+
     Set<Director> directors = new HashSet<>();
 
+    public Movie() {
 
-    public Movie(){
-
-     }
+    }
 
     public Long getId() {
         return id;
