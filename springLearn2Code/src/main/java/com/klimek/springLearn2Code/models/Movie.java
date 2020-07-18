@@ -13,7 +13,7 @@ public class Movie {
     private String title;
 
     @ManyToMany
-    Set<Director> movies = new HashSet<>();
+    Set<Director> directors = new HashSet<>();
 
 
     public Movie(){
@@ -36,11 +36,11 @@ public class Movie {
         title = newValue;
     }
 
-    public Set<Director> getMovies() {
-        return movies;
+    public Set<Director> getDirectors() {
+        return directors;
     }
 
-    public void setMovies(Set<Director> newValue) {
-        movies = newValue;
+    public void setDirectors(Set<Director> newValue) {
+        directors = newValue;
     }
 }
