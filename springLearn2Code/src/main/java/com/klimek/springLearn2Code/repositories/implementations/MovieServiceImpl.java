@@ -1,10 +1,13 @@
 package com.klimek.springLearn2Code.repositories.implementations;
 
 
+import org.springframework.stereotype.*;
 import com.klimek.springLearn2Code.services.MovieService;
 import com.klimek.springLearn2Code.models.Movie;
 import com.klimek.springLearn2Code.repositories.MovieRepository;
 
+
+@Service
 public class MovieServiceImpl implements MovieService {
     MovieRepository movieRepository;
 
