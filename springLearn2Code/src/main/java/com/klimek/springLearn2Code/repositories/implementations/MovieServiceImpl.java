@@ -9,8 +9,15 @@ import com.klimek.springLearn2Code.repositories.MovieRepository;
 
 @Service
 public class MovieServiceImpl implements MovieService {
+
+
     MovieRepository movieRepository;
 
+    public MovieServiceImpl(MovieRepository movieRepository) {
+        this.movieRepository = movieRepository;
+    }
+
+    
 
     @Override
     public Movie createAndAddMovie() {
