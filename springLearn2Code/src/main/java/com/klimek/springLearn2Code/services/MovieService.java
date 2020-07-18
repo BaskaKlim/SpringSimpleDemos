@@ -1,4 +1,4 @@
-package com.klimek.springLearn2Code;
+package com.klimek.springLearn2Code.services;
 
 import com.klimek.springLearn2Code.models.*;
 
