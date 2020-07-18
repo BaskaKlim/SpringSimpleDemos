@@ -38,4 +38,17 @@ public class Director {
     public void setMovies(Set<Movie> newValue) {
         movies = newValue;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Director)) return false;
+        Director director = (Director) o;
+        return getId().equals(director.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
+    }
 }
