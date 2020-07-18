@@ -13,6 +13,7 @@ public class MovieServiceImpl implements MovieService {
 
     MovieRepository movieRepository;
 
+    //implementacia movieRepository, movieRepository je springovsky bean, spring nam injectne dependenciu
     public MovieServiceImpl(MovieRepository movieRepository) {
         this.movieRepository = movieRepository;
     }
