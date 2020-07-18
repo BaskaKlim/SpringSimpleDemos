@@ -4,21 +4,16 @@ import java.util.*;
 import javax.persistence.*;
 
 @Entity
-public class Movie {
+public class Director {
 
     @Id
     @GeneratedValue
-    
     private Long id;
-    private String title;
+
+    private String name;
 
     @ManyToMany
-    Set<Director> movies = new HashSet<>();
-
-
-    public Movie(){
-
-     }
+    Set<Movie>  movies = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -28,19 +23,19 @@ public class Movie {
         id = newValue;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String newValue) {
-        title = newValue;
+    public void setName(String newValue) {
+        name = newValue;
     }
 
-    public Set<Director> getMovies() {
+    public Set<Movie> getMovies() {
         return movies;
     }
 
-    public void setMovies(Set<Director> newValue) {
+    public void setMovies(Set<Movie> newValue) {
         movies = newValue;
     }
 }
