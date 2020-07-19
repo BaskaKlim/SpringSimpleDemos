@@ -8,7 +8,7 @@ public class CzechDemoService implements DemoService {
 
     @Override
     public void sayHello() {
-        System.out.println("Ahoj svet!");
+        System.out.println("Hele vole, cau svet!");
     }
 }
 

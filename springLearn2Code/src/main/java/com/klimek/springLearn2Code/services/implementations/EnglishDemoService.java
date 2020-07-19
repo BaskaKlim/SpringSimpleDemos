@@ -4,7 +4,7 @@ import org.springframework.stereotype.*;
 import com.klimek.springLearn2Code.services.*;
 
 @Service
-public class EnglishDemoSrvice implements DemoService {
+public class EnglishDemoService implements DemoService {
 
     @Override
     public void sayHello() {

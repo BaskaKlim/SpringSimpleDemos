@@ -12,19 +12,19 @@ public class AppRun {
 
     /* da sa to pomocou konstruktoru alebo pomocou @Autowired */
 
-    @Autowired
+    /*@Autowired
     MovieService movieService;
 
     public void run() {
         movieService.createAndAddMovie();
-    }
+    } */
 
     //TODO: dotiahnut DemoService a spustit
-
     @Autowired
+    @Qualifier("slovakDemoService")
     DemoService demoService;
 
-    public void runDemo() {
+    public void run() {
         demoService.sayHello();
 
     }
