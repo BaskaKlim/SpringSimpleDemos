@@ -15,7 +15,7 @@ public class SpringLearn2CodeApplication {
 		ConfigurableApplicationContext kontext =
 			 SpringApplication.run(SpringLearn2CodeApplication.class, args);
 
-		//vytiahnutie beany
+		//vytiahnutie beany z spring kontexte {kontainera}
 		AppRun appRun = kontext.getBean(AppRun.class);
 		appRun.run();
 
