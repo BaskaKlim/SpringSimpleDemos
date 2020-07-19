@@ -6,6 +6,7 @@ import com.klimek.springLearn2Code.services.*;
 
 @Service
 @Primary
+@Profile("eng")
 public class PrimaryDemoServiceImpl implements DemoService {
 
     @Override

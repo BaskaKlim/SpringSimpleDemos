@@ -5,10 +5,11 @@ import org.springframework.stereotype.*;
 import com.klimek.springLearn2Code.services.*;
 
 @Service
+@Profile("eng")
 public class EnglishDemoService implements DemoService {
 
     @Override
-    @Profile("eng")
+
     
     public void sayHello() {
         System.out.println("hi world!");
