@@ -21,7 +21,7 @@ public class AppRun {
 
     //TODO: dotiahnut DemoService a spustit
     @Autowired
-    //@Qualifier("englishDemoService")
+    @Qualifier("englishDemoService")
     DemoService demoService;
 
     public void run() {
