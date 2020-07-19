@@ -19,4 +19,15 @@ public class AppRun {
         movieService.createAndAddMovie();
     }
 
+    //TODO: dotiahnut DemoService a spustit
+
+    @Autowired
+    DemoService demoService;
+
+    public void runDemo() {
+        demoService.sayHello();
+
+    }
+
+
 }
