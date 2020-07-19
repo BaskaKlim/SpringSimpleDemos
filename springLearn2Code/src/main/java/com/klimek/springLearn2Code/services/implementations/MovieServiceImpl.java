@@ -1,4 +1,4 @@
-package com.klimek.springLearn2Code.repositories.implementations;
+package com.klimek.springLearn2Code.services.implementations;
 
 
 import org.springframework.stereotype.*;
