@@ -23,6 +23,8 @@ public class MovieController {
      //napojenie sa na movie repository a nasetovanie na model
 
         model.addAttribute("movies", movieRepository.findAll());
+        //set view
+        return "movies"  ;
     }
 
 }
