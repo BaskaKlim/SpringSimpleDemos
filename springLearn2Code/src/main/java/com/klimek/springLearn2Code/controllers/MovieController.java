@@ -1,6 +1,7 @@
 package com.klimek.springLearn2Code.controllers;
 
 import org.springframework.stereotype.*;
+import org.springframework.ui.*;
 import org.springframework.web.bind.annotation.*;
 import com.klimek.springLearn2Code.repositories.*;
 
@@ -18,10 +19,10 @@ public class MovieController {
 
 
     @RequestMapping ("/movie")
-    public String getMovies(){
-     //napojenie sa na movie repository
+    public String getMovies(Model model){
+     //napojenie sa na movie repository a nasetovanie na model
 
-        movieRepository.findAll();
+        model.addAttribute("movies", movieRepository.findAll());
     }
 
 }
