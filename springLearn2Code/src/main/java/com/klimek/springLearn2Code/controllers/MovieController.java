@@ -19,7 +19,9 @@ public class MovieController {
 
     @RequestMapping ("/movie")
     public String getMovies(){
-      return "movie";
+     //napojenie sa na movie repository
+
+        movieRepository.findAll();
     }
 
 }
