@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" xmls:th="http://www.thymeleaf.org"  >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    
+    <h1> MOVIES</h1>
+
+    <ul>
+        <li th:each="movie :${movies}">
+            <span th:text ="${movie.title}"> Movie name </span>
+        </li>
+        
+    </ul>
 </body>
 </html>
