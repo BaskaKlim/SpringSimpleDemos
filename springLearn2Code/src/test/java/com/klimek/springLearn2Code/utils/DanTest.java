@@ -20,4 +20,12 @@ class DanTest {
        assertEquals(BigDecimal.valueOf(120),pripocitane);
                                                          
     }
+
+
+    @Test
+    public void suma141PlusDanJe169Cela2(){
+        BigDecimal pripocitane =  Dan.pripocitajDan(BigDecimal.valueOf(141L));
+        assertEquals(BigDecimal.valueOf(169.20),pripocitane);
+
+    }
 }
