@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DanTest {
 
+    //TODO: positive scenario
     @Test
     public void suma100PlusDanJe120(){
         
@@ -27,6 +28,13 @@ class DanTest {
     public void suma141PlusDanJe169Cela2(){
         assertEquals(BigDecimal.valueOf(169.20).setScale(2),
                 Dan.pripocitajDan(BigDecimal.valueOf(141L).setScale(2)));
+
+    }
+    //TODO: negative scenario
+
+    @Test
+    public void suma10PlusDanNieJe100(){
+        assertNotEquals(BigDecimal.valueOf(1000L).setScale(2),Dan.pripocitajDan(BigDecimal.valueOf(10).setScale(2)));
 
     }
 }
