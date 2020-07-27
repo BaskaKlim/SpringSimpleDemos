@@ -16,16 +16,17 @@ class DanTest {
 
     @Test
     public void suma100PlusDanJe120(){
-       BigDecimal pripocitane =  Dan.pripocitajDan(BigDecimal.valueOf(100L));
-       assertEquals(BigDecimal.valueOf(120),pripocitane);
+        
+       assertEquals(BigDecimal.valueOf(120L).setScale(2),
+               Dan.pripocitajDan(BigDecimal.valueOf(100L).setScale(2)));
                                                          
     }
 
 
     @Test
     public void suma141PlusDanJe169Cela2(){
-        BigDecimal pripocitane =  Dan.pripocitajDan(BigDecimal.valueOf(141L));
-        assertEquals(BigDecimal.valueOf(169.20),pripocitane);
+        assertEquals(BigDecimal.valueOf(169.20).setScale(2),
+                Dan.pripocitajDan(BigDecimal.valueOf(141L).setScale(2)));
 
     }
 }
